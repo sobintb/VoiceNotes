@@ -1,4 +1,4 @@
-# AudioVisualizerTest
+# VoiceNotes
 A native iOS voice memo app built with SwiftUI, featuring real-time audio visualization, smooth playback controls, and persistent recording management.
 
 ---
