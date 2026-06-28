@@ -109,7 +109,13 @@ final class RecorderViewModel: NSObject, ObservableObject {
         setupAudioEngine()
 
         state = .recording
-        startRecordingTimer()
+        // resume from where it left off, don't reset
+        recordingTimer = Timer.scheduledTimer(
+            withTimeInterval: 1,
+            repeats: true
+        ) { [weak self] _ in
+            self?.recordingSeconds += 1
+        }
         print("Recording resumed")
     }
 

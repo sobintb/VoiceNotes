@@ -77,7 +77,7 @@ struct HomeView: View {
             }
             .ignoresSafeArea(.keyboard)
             .ignoresSafeArea(edges: .bottom)
-            .navigationTitle("Recordings")
+            .navigationTitle("Voice Notes")
             .animation(
                 .spring(response: 0.45, dampingFraction: 0.82),
                 value: coordinator.selectedRecording
